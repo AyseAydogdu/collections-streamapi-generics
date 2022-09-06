@@ -53,7 +53,7 @@ public class GenericClass <T>{
 
 
 }
-class GenericClassTest<T>{
+class GenericClassTest{
     public static void main(String[] args) {
 
         GenericClass<String> genericClass = new GenericClass<>("Ayse");
@@ -73,7 +73,7 @@ class GenericClassTest<T>{
 
     }
 
-    public static void print(List<Object> list) {
+    public static <E> void print(List<E> list) {
         list.forEach(System.out::println);
 
     }
